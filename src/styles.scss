@@ -1,7 +1,13 @@
-body{
-  background-color: #3BA195;
+@use './components/styles/var' as *;
+
+
+html, body{
+  background-color: $verde-oscuro;
   margin: 0;
   padding: 0;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+  padding-top: 2rem;
   // Fuente a utilizar Poppins
   .poppins-thin {
       font-family: "Poppins", serif;

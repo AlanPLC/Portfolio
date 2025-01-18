@@ -11,16 +11,16 @@ export default function Navbar (){
                     </Link>
                 </li>
                 <li>
-                    <Link className='poppins-semibold' to="introduccion" smooth={true} duration={500}>
+                    <Link className='poppins-semibold' to="sobre-mi" smooth={true} duration={500}>
                     Sobre Mí
                     </Link>
                 </li>
                 <li>
-                    <Link className='poppins-semibold' to="introduccion" smooth={true} duration={500}>
+                    <Link className='poppins-semibold' to="proyectos-en-progreso" smooth={true} duration={500}>
                     Proyectos en Progreso
                     </Link></li>
                 <li>
-                    <Link className='poppins-semibold' to="introduccion" smooth={true} duration={500}>
+                    <Link className='poppins-semibold' to="contacto" smooth={true} duration={500}>
                     Contacto
                     </Link>
                 </li>
