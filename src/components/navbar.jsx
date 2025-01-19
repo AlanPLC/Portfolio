@@ -1,14 +1,18 @@
 import './styles/navbar.scss';
-import { Link } from 'react-scroll';
+import { Link, animateScroll as scroll } from 'react-scroll';
 export default function Navbar (){
     return (
         <nav>
-            <img src="/pageportafolio.png" alt="portafolio-img" className="pageportafolio"/>
+            
             <ul>
+                <li><img src="/portafolio.png" alt="portafolio" className='portafolio'/></li>
                 <li>
-                    <Link className='poppins-semibold' to="introduccion" smooth={true} duration={500}>
+                <a
+                    className="poppins-semibold"
+                    onClick={() => scroll.scrollToTop({ duration: 500, smooth: true })}
+                >
                     Introducción
-                    </Link>
+                </a>
                 </li>
                 <li>
                     <Link className='poppins-semibold' to="sobre-mi" smooth={true} duration={500}>
@@ -16,14 +20,15 @@ export default function Navbar (){
                     </Link>
                 </li>
                 <li>
-                    <Link className='poppins-semibold' to="proyectos-en-progreso" smooth={true} duration={500}>
-                    Proyectos en Progreso
+                    <Link className='poppins-semibold' to="proyectos" smooth={true} duration={500}>
+                    Proyectos
                     </Link></li>
                 <li>
                     <Link className='poppins-semibold' to="contacto" smooth={true} duration={500}>
                     Contacto
                     </Link>
                 </li>
+                <li><img src="/bandera.png" alt="bandera" className='bandera'/></li>
             </ul>
         </nav>
       )
