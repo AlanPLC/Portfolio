@@ -1,5 +1,5 @@
 import './styles/portfolio.scss'
-import Acordeon from './acordeon.jsx'
+import Acordeon from '../components/acordeon.jsx'
 export default function Portfolio (){
 
     return(
@@ -14,7 +14,7 @@ export default function Portfolio (){
                         <p className='poppins-bold' id="lastname">CARRIZO</p>
                         <p className='poppins-bold' id="name">ALAN PABLO LAUTARO</p>
                         <div className='glitch-sec'>
-                            <h1 className='poppins-semibold' data-text="DESARROLLADOR JUNIOR WEB FULL STACK" id="desc">DESARROLLADOR JUNIOR WEB FULL STACK</h1>
+                            <h1 className='poppins-semibold' data-text="DESARROLLADOR WEB FULL STACK" id="desc">DESARROLLADOR WEB FULL STACK</h1>
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@ export default function Portfolio (){
                 <div className='portfolio-sobre-mi-cont-2'>
                     <img src="./sobre-mi-img.jpg" alt="sobre-mi-img" className="sobre-mi-img"/>
                     <p id='parrafo-sobre-mi' className='poppins-regular'>¡Hola! Soy un apasionado del desarrollo web y recientemente me gradué como Técnico Universitario en Programación en la Universidad Tecnológica Nacional. Trabajo como desarrollador fullstack en entornos RESTful utilizando React en el frontend y Node con MySQL en el backend. Siempre estoy buscando nuevos desafíos que me permitan crecer como profesional y aportar valor a proyectos innovadores.</p>
-                 </div>
+                </div>
             </div>
 
             {/* Sección Conocimientos */}
@@ -64,13 +64,12 @@ export default function Portfolio (){
 
             {/* Sección Proyectos en Progreso  */}
 
-            <div className='portfolio-proyectos-cont'>
+            <div className='portfolio-proyectos-cont' id='proyectos'>
                 <div className='portfolio-proyectos-cont-1'>
                     <h2 className='poppins-bold'>PROYECTOS</h2>
                 </div>
                 <div className='portfolio-proyectos-cont-2'>
                     <Acordeon />
-                    <img src="https://imgur.com/a/Y3BgJz3" alt="" />
                 </div>
             </div>
         </div>

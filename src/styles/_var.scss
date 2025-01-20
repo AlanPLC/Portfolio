@@ -1,0 +1,26 @@
+$verde-principal: #3BA195;
+$verde-oscuro: #1F7768;
+$blanco-principal: #F1F3FF;
+$verde-claro: #A8D5BA;
+$negro: #000000;
+
+@mixin portfolio-containers{
+    max-width: 60rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+@mixin section-title-container{
+            border-radius: 5px;
+            box-shadow: 16px 16px 4px rgba(0, 0, 0, 0.30);
+            width:fit-content;
+            padding: 0rem 1rem;
+            background-color: $blanco-principal;
+            h2{
+                color: $negro;
+                font-size: 2rem;
+                margin: 0 0 2.5rem;
+                letter-spacing: 0.2rem;
+                text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+            }
+}
