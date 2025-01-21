@@ -1,0 +1,91 @@
+@use '../../styles/var' as *;
+
+@media (min-width: 1024px){
+    .acordeon{
+        border-radius: 5px;
+        background-color: $negro;
+        padding: 0.5rem 1rem;
+        margin-bottom: 0.5rem;
+    
+        button{
+            width: 100%;
+            border: none;
+            background-color: rgb(0, 0, 0,0);
+            cursor: pointer;
+            p{
+                color: $blanco-principal;
+                text-align: left;
+                margin: 0;
+            }
+            .ac-head{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                span{
+                    font-size: 1.2rem;
+                    color: $blanco-principal;
+                    margin: 0;
+                }
+                svg{
+                    width: 1.8rem;
+                }
+            }
+        }
+    
+     
+        
+        .ac-toggle{
+            border-top: 1px solid $blanco-principal;
+            display: flex;
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
+            padding-bottom: 1rem;
+            transition: 
+                height 0.5s ease-in-out,
+                opacity 0.5s ease-in-out;
+           
+            .info{
+                width: 50%;
+                margin-right: 1rem;
+                height: 100%;
+                p{
+                    color: $blanco-principal;
+                    font-size: 1rem;
+                    text-align: left;
+                    margin-left: 0;
+                }
+                ul{
+                    li{
+                        color: $blanco-principal;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .imgs {
+                width: 50%;
+                height: 24rem;
+                overflow: hidden;
+                position: relative;
+                margin: 1rem 0;
+              }
+              
+              .imgs img {
+                display: flex;
+                margin: 0 auto;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+              }
+            
+         
+        }
+        .animated{
+            max-height: 24rem;
+            opacity: 1;
+            transition: 
+                height 0.5s ease-in-out,
+                opacity 0.5s ease-in-out;
+        }
+    }
+}

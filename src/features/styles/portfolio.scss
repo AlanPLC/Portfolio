@@ -1,0 +1,32 @@
+@use '../../styles/var' as *;
+@use '../../styles/animations' as *;
+
+// Importación secciones Portfolio
+@use 'sec-introduccion' as *;
+@use 'sec-sobre-mi' as *;
+@use 'sec-conocimientos' as *;
+@use 'sec-proyectos' as *;
+@use 'sec-contacto' as *;
+
+// Contenedor principal Portfolio
+.portfolio-main-cont{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+    gap: 1rem;
+
+    // Contenedor Sección Introducción
+    @include seccion-introduccion;
+
+    // Contenedor Sección Sobre Mí
+    @include seccion-sobre-mi;
+
+    // Contenedor Sección Conocimientos
+    @include seccion-conocimientos;
+
+    // Contenedor Sección Proyectos
+    @include seccion-proyectos;
+
+    // Contenedor sección Contacto
+    @include seccion-contacto;
+}

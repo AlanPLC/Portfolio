@@ -1,13 +1,26 @@
-@use './components/styles/var' as *;
+@use 'var' as *;
 
 
 html, body{
-  background-color: $verde-oscuro;
+  background:
+      radial-gradient(50% 50% at 100% 0,#3ba195 0%  5% ,#000000 6%  15%,#3ba195 16% 25%,#000000 26% 35%,#3ba195 36% 45%,
+       #000000 46% 55%,#3ba195 56% 65%,#000000 66% 75%,#3ba195 76% 85%,#000000 86% 95%,
+       #0000 96%),
+      radial-gradient(50% 50% at 0 100%,#3ba195 0%  5% ,#000000 6%  15%,#3ba195 16% 25%,#000000 26% 35%,#3ba195 36% 45%,
+       #000000 46% 55%,#3ba195 56% 65%,#000000 66% 75%,#3ba195 76% 85%,#000000 86% 95%,
+       #0000 96%),
+      radial-gradient(50% 50%,#3ba195 0%  5% ,#000000 6%  15%,#3ba195 16% 25%,#000000 26% 35%,#3ba195 36% 45%,
+       #000000 46% 55%,#3ba195 56% 65%,#000000 66% 75%,#3ba195 76% 85%,#000000 86% 95%,
+       #0000 96%),
+      radial-gradient(50% 50%,#3ba195 0%  5% ,#000000 6%  15%,#3ba195 16% 25%,#000000 26% 35%,#3ba195 36% 45%,
+       #000000 46% 55%,#3ba195 56% 65%,#000000 66% 75%,#3ba195 76% 85%,#000000 86% 95%,
+       #0000 96%) 22px 22px;
+  background-size: 44px 44px;
+  background-color: #3ba195;
   margin: 0;
   padding: 0;
-  padding-bottom: 2rem;
   box-sizing: border-box;
-  padding-top: 2rem;
+
   // Fuente a utilizar Poppins
   .poppins-thin {
       font-family: "Poppins", serif;

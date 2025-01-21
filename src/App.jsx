@@ -1,6 +1,6 @@
-import './styles.scss'
+import './styles/styles.scss'
 import Navbar from "./components/navbar.jsx"
-import Portfolio from "./components/portfolio.jsx"
+import Portfolio from "./features/portfolio.jsx"
 function App() {
 
   return (

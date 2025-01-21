@@ -1,0 +1,39 @@
+@use '../../styles/var' as *;
+@use '../../styles/animations' as *;
+
+@mixin seccion-sobre-mi{
+    @media (min-width: 1024px){
+        .portfolio-sobre-mi-cont{
+            @include portfolio-containers;
+            .portfolio-sobre-mi-cont-1{
+                @include section-title-container;
+            }
+    
+            .portfolio-sobre-mi-cont-2{
+               
+                border: 0.5rem solid $blanco-principal;
+                border-radius: 5px;
+                padding: 2rem;
+                box-shadow: 16px 16px 4px rgba(0, 0, 0, 0.30);
+                background-color: $negro;
+                overflow: auto;
+             
+                .sobre-mi-img{
+                    float: left;
+                    width: 16rem;
+                    height: 16rem;
+                    shape-outside: circle(50%); 
+                    border-radius: 50%;
+                    border: 4px solid $blanco-principal;
+                    margin-right: 1rem;
+                }
+                #parrafo-sobre-mi{
+                    color: $blanco-principal;
+                    font-size: 1.2rem;
+                    line-height: 1.6;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
