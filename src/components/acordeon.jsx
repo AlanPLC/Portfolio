@@ -7,7 +7,7 @@ export default function Acordeon() {
   const acordeonData = [
     {
         title: "Referen",
-        role: "Desarrollador Full Stack y Diseñador UI/UX",
+        role: "Desarrollador Full Stack y Diseñador UI/UX (En Progreso)",
         content: "Formo parte de un equipo de desarrollo en una StartUp llamada ONNO. Aunque aún en fase de diseño y prototipado, estamos creando Referen, una aplicación web. Tanto la idea como el desarrollo están protegidos como propiedad intelectual, representando un esfuerzo colaborativo entre diseñadores y desarrolladores. Mi participación incluye:",
         content_list: [
           "Desarrollo de funcionalidades front-end y back-end utilizando tecnologías como React, Node.js y MySQL.",

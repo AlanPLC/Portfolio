@@ -5,6 +5,7 @@ $verde-claro: #A8D5BA;
 $negro: #000000;
 
 @mixin portfolio-containers{
+    width: 60rem;
     max-width: 60rem;
     margin: 0 auto;
     margin-bottom: 5rem;

@@ -2,121 +2,123 @@
 @use '../../styles/animations' as *;
 
 @mixin seccion-introduccion{
-    .portfolio-introduccion-cont{
-        max-width: 60rem;
-        display: flex;
-        flex-direction: column;
-        padding-top: 1rem;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        gap: 1rem;
-        
-        .portfolio-introduccion-cont-1{
+    @media (min-width: 1024px){
+        .portfolio-introduccion-cont{
+            max-width: 60rem;
             display: flex;
-            flex-direction: row;
-            box-shadow: 16px 16px 4px rgba(0, 0, 0, 0.30);
-            padding: 2rem;
-            height: 28rem;
-            background-color: $blanco-principal;
-            border-radius: 5px;
+            flex-direction: column;
+            padding-top: 1rem;
+            justify-content: center;
             align-items: center;
+            margin: 0 auto;
+            gap: 1rem;
             
-            // Textos de Introducción
-            p{
-                margin: 0;
-                padding: 0;
-            }
-            #name{
-                left: -40px;
-                position: relative;
-                font-size: 2.8rem;
-                color: $negro;
-                text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+            .portfolio-introduccion-cont-1{
+                display: flex;
+                flex-direction: row;
+                box-shadow: 16px 16px 4px rgba(0, 0, 0, 0.30);
+                padding: 2rem;
+                height: 28rem;
+                background-color: $blanco-principal;
+                border-radius: 5px;
+                align-items: center;
                 
+                // Textos de Introducción
+                p{
+                    margin: 0;
+                    padding: 0;
+                }
+                #name{
+                    left: -40px;
+                    position: relative;
+                    font-size: 2.8rem;
+                    color: $negro;
+                    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+                    
+                }
+                #lastname{
+                    left: -40px;
+                    position: relative;
+                    margin: 0;
+                    font-size: 3rem;
+                    color: $negro;
+                    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+                }
+    
+                // Descripción h1 con su animación
+                #desc{
+                    text-align: center;
+                    font-size: 2.5rem;
+                    color: $blanco-principal;
+                    margin: 0 5rem;
+                    position: relative;
+                    display: inline-block;
+                    text-shadow: 1px 1px #ff00c1, -1px -1px #00f4ff;
+                    animation: glitch 2s infinite;
+                }
+                .glitch-sec{
+                    width: 32rem;
+                    left: -65px;
+                    background-color: $negro;
+                    border-radius: 5px; 
+                    padding: 0.5rem;
+                    position: relative;
+                    box-shadow: 8px 6px 2px rgba(0, 0, 0, 0.25);
+    
+                }
+                #desc::before,
+                #desc::after{
+                    content: attr(data-text);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: $negro;
+                    overflow: hidden;
+                    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+                    opacity: 0.7;
+                }
+                #desc::before{
+                    left: 1px;
+                    text-shadow: -1px 0 #ff0000;
+                    animation: glitch-top 2s infinite;
+                }
+    
+                #desc::after{
+                    left: -1px;
+                    text-shadow: -1px 0 #0000ff;
+                    animation: glitch-bottom 2s infinite;
+                }
+    
+                // Animación Glitch Introducción
+                @include glitch-animation;
+    
+                // Imagen de Introducción
+                .introduccion-img{
+                    width: 24rem;
+                    height: 18rem;
+                    z-index: 99;
+                    shape-outside: polygon(30% 0, 70% 0, 70% 70%, 100% 100%, 0 100%, 30% 70);
+                }
             }
-            #lastname{
-                left: -40px;
-                position: relative;
-                margin: 0;
-                font-size: 3rem;
-                color: $negro;
-                text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+    
+            .portfolio-introduccion-cont-2{
+                @include portfolio-containers;
+                // Flecha inferior Introducción y su animación
+                .flecha-img{
+                    filter: invert(1);
+                    width: 4rem;
+                    height: 5rem;
+                    display: block;
+                    animation: subirBajar 2.5s ease-in-out infinite;
+                    margin: 0 auto;
+                    
+                }
+    
+                // Animación movimiento flecha Introducción
+                @include movimiento-flecha-introduccion;
             }
-
-            // Descripción h1 con su animación
-            #desc{
-                text-align: center;
-                font-size: 2.5rem;
-                color: $blanco-principal;
-                margin: 0 5rem;
-                position: relative;
-                display: inline-block;
-                text-shadow: 1px 1px #ff00c1, -1px -1px #00f4ff;
-                animation: glitch 2s infinite;
-            }
-            .glitch-sec{
-                width: 32rem;
-                left: -65px;
-                background-color: $negro;
-                border-radius: 5px; 
-                padding: 0.5rem;
-                position: relative;
-                box-shadow: 8px 6px 2px rgba(0, 0, 0, 0.25);
-
-            }
-            #desc::before,
-            #desc::after{
-                content: attr(data-text);
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: $negro;
-                overflow: hidden;
-                clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-                opacity: 0.7;
-            }
-            #desc::before{
-                left: 1px;
-                text-shadow: -1px 0 #ff0000;
-                animation: glitch-top 2s infinite;
-            }
-
-            #desc::after{
-                left: -1px;
-                text-shadow: -1px 0 #0000ff;
-                animation: glitch-bottom 2s infinite;
-            }
-
-            // Animación Glitch Introducción
-            @include glitch-animation;
-
-            // Imagen de Introducción
-            .introduccion-img{
-                width: 24rem;
-                height: 18rem;
-                z-index: 99;
-                shape-outside: polygon(30% 0, 70% 0, 70% 70%, 100% 100%, 0 100%, 30% 70);
-            }
-        }
-
-        .portfolio-introduccion-cont-2{
-            @include portfolio-containers;
-            // Flecha inferior Introducción y su animación
-            .flecha-img{
-                filter: invert(1);
-                width: 4rem;
-                height: 5rem;
-                display: block;
-                animation: subirBajar 2.5s ease-in-out infinite;
-                
-                
-            }
-
-            // Animación movimiento flecha Introducción
-            @include movimiento-flecha-introduccion;
         }
     }
 }

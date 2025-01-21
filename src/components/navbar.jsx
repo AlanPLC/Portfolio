@@ -5,7 +5,7 @@ export default function Navbar (){
         <nav>
             
             <ul>
-                <li><img src="/portafolio.png" alt="portafolio" className='portafolio'/></li>
+                <li><img src="./Introduccion/portafolio.png" alt="portafolio" className='portafolio'/></li>
                 <li>
                 <a
                     className="poppins-semibold"
@@ -28,7 +28,7 @@ export default function Navbar (){
                     Contacto
                     </Link>
                 </li>
-                <li><img src="/bandera.png" alt="bandera" className='bandera'/></li>
+                <li><img src="./Introduccion/bandera.png" alt="bandera" className='bandera'/></li>
             </ul>
         </nav>
       )
