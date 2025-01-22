@@ -6,26 +6,29 @@ $negro: #000000;
 
 @mixin portfolio-containers{
     width: 60rem;
-    margin-bottom: 5rem;
+    margin: 0 0 5rem 0;
     margin: 0 auto;
 
+    // Reducción 25%
     @media (max-width: 1024px){
-        width: 45rem;
+        width: 100%;
         max-width: 45rem;
         margin: 0 auto;
         margin-bottom: 3.75rem;
     }
+    // Reducción 40%
     @media (max-width: 768px){
-        width: 30rem;
-        max-width: 30rem;
+        max-width: 36rem;
+        width: 100%;
         margin: 0 auto;
-        margin-bottom: 2.5rem;
+        margin-bottom: 3rem;
     }
+    // Reducción 60%
     @media (max-width: 480px){
-        width: 21rem;
-        max-width: 21rem;
+        min-width: 100%;
+        max-width: 24rem;
         margin: 0 auto;
-        margin-bottom: 1.75rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -43,8 +46,10 @@ $negro: #000000;
                 letter-spacing: 0.2rem;
                 text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
             }
+
+            // Reducción 25%
             @media (max-width: 1024px){
-                border-radius: 5px;
+                border-radius: 3.75px;
                 box-shadow: 12px 12px 3px rgba(0, 0, 0, 0.30);
                 width: fit-content;
                 padding: 0rem 0.75rem;
@@ -58,34 +63,38 @@ $negro: #000000;
                     text-shadow: 2.25px 2.25px 1.5px rgba(0, 0, 0, 0.5);
                 }
             }
+
+            // Reducción 40%
             @media (max-width: 768px){
-                border-radius: 5px;
-                box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.30);
+                border-radius: 3px; 
+                box-shadow: 9.6px 9.6px 2.4px rgba(0, 0, 0, 0.30);
                 width: fit-content;
-                padding: 0rem 0.5rem;
+                padding: 0rem 0.6rem;
                 background-color: $blanco-principal;
 
                 h2 {
                     color: $negro;
-                    font-size: 1rem;
-                    margin: 0 0 1.25rem;
-                    letter-spacing: 0.1rem;
-                    text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.5);
+                    font-size: 1.2rem;
+                    margin: 0 0 1.5rem;
+                    letter-spacing: 0.12rem;
+                    text-shadow: 1.8px 1.8px 1.2px rgba(0, 0, 0, 0.5);
                 }
             }
+
+            // Reducción 60%
             @media (max-width: 480px){
-                border-radius: 5px; 
-                box-shadow: 5.6px 5.6px 1.4px rgba(0, 0, 0, 0.30);
+                border-radius: 2px; 
+                box-shadow: 6.4px 6.4px 1.6px rgba(0, 0, 0, 0.30);
                 width: fit-content;
-                padding: 0rem 0.35rem;
+                padding: 0rem 0.4rem;
                 background-color: $blanco-principal;
 
                 h2 {
                     color: $negro;
-                    font-size: 0.7rem;
-                    margin: 0 0 0.875rem;
-                    letter-spacing: 0.07rem;
-                    text-shadow: 1.05px 1.05px 0.7px rgba(0, 0, 0, 0.5);
+                    font-size: 0.8rem;
+                    margin: 0 0 1rem;
+                    letter-spacing: 0.08rem;
+                    text-shadow: 1.2px 1.2px 0.8px rgba(0, 0, 0, 0.5);
                 }
             }
 }

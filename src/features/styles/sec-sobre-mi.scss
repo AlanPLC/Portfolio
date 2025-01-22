@@ -34,6 +34,8 @@
             }
         }
     }
+
+    // Reducción 25%
     @media (max-width: 1024px){
         .portfolio-sobre-mi-cont {
             @include portfolio-containers;
@@ -43,32 +45,35 @@
             }
         
             .portfolio-sobre-mi-cont-2 {
-                border: 0.375rem solid $blanco-principal; /* 0.5rem * 0.75 */
-                border-radius: 5px;
-                padding: 1.5rem; /* 2rem * 0.75 */
-                box-shadow: 12px 12px 3px rgba(0, 0, 0, 0.30); /* 16px, 4px * 0.75 */
+                align-items: center;
+                border: 0.375rem solid $blanco-principal; 
+                border-radius: 3.75px;
+                padding: 1.5rem; 
+                box-shadow: 12px 12px 3px rgba(0, 0, 0, 0.30); 
                 background-color: $negro;
                 overflow: auto;
         
                 .sobre-mi-img {
                     float: left;
-                    width: 12rem; /* 16rem * 0.75 */
-                    height: 12rem; /* 16rem * 0.75 */
+                    width: 12rem; 
+                    height: 12rem;
                     shape-outside: circle(50%); 
-                    border-radius: 50%; /* Sin cambios, ya que es un porcentaje */
-                    border: 3px solid $blanco-principal; /* 4px * 0.75 */
-                    margin-right: 0.75rem; /* 1rem * 0.75 */
+                    border-radius: 50%; 
+                    border: 3px solid $blanco-principal; 
+                    margin-right: 0.75rem; 
                 }
         
                 #parrafo-sobre-mi {
                     color: $blanco-principal;
-                    font-size: 0.9rem; /* 1.2rem * 0.75 */
-                    line-height: 1.2; /* 1.6 * 0.75 */
+                    font-size: 0.95rem; 
+                    line-height: 1.6; 
                     text-align: justify;
                 }
             }
         }
     }
+
+    // Reducción 40%
     @media (max-width: 768px){
         .portfolio-sobre-mi-cont {
             @include portfolio-containers;
@@ -78,32 +83,34 @@
             }
         
             .portfolio-sobre-mi-cont-2 {
-                border: 0.25rem solid $blanco-principal;
-                border-radius: 2.5px;
-                padding: 1rem;
-                box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.30);
+                border: 0.3rem solid $blanco-principal;
+                border-radius: 3px;
+                padding: 1.2rem;
+                box-shadow: 9.6px 9.6px 2.4px rgba(0, 0, 0, 0.30);
                 background-color: $negro;
                 overflow: auto;
         
                 .sobre-mi-img {
                     float: left;
-                    width: 8rem;
-                    height: 8rem;
+                    width: 9.6rem;
+                    height: 9.6rem;
                     shape-outside: circle(50%);
                     border-radius: 50%;
-                    border: 2px solid $blanco-principal;
-                    margin-right: 0.5rem;
+                    border: 2.4px solid $blanco-principal;
+                    margin-right: 0.6rem;
                 }
         
                 #parrafo-sobre-mi {
                     color: $blanco-principal;
-                    font-size: 0.6rem;
-                    line-height: 0.8;
+                    font-size: 0.75rem;
+                    line-height: 1.6;
                     text-align: justify;
                 }
             }
         }
     }
+
+    // Reducción 60%
     @media (max-width: 480px){
         .portfolio-sobre-mi-cont {
             @include portfolio-containers;
@@ -113,30 +120,30 @@
             }
         
             .portfolio-sobre-mi-cont-2 {
-                border: 0.175rem solid $blanco-principal;
-                border-radius: 1.75px;
-                padding: 0.7rem;
-                box-shadow: 5.6px 5.6px 1.4px rgba(0, 0, 0, 0.30);
+                border: 0.2rem solid $blanco-principal;
+                border-radius: 2px;
+                padding: 0.8rem;
+                box-shadow: 6.4px 6.4px 1.6px rgba(0, 0, 0, 0.30);
                 background-color: $negro;
                 overflow: auto;
         
                 .sobre-mi-img {
                     float: left;
-                    width: 5.6rem;
-                    height: 5.6rem;
+                    width: 6.4rem;
+                    height: 6.4rem;
                     shape-outside: circle(50%);
                     border-radius: 50%;
-                    border: 1.4px solid $blanco-principal;
-                    margin-right: 0.35rem;
+                    border: 1.6px solid $blanco-principal;
+                    margin-right: 0.4rem;
                 }
         
                 #parrafo-sobre-mi {
                     color: $blanco-principal;
-                    font-size: 0.42rem;
-                    line-height: 0.56;
+                    font-size: 0.51rem;
+                    line-height: 1.6; // Sin cambios
                     text-align: justify;
                 }
             }
-        }
+        }        
     }
 }

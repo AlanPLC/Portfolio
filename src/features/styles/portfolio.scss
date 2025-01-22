@@ -10,12 +10,22 @@
 
 // Contenedor principal Portfolio
 .portfolio-main-cont{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 64px 0;
-    gap: 1rem;
+    width: 100%;
     margin: 0 auto;
+    padding: 5rem 0 0 0;
+
+    @media (max-width: 1024px){
+        padding-top: 3.8rem;
+    }
+    @media (max-width: 768px){
+        padding-top: 2.5rem;
+    }
+    @media (max-width: 480px){
+        padding-top: 0.3rem;
+
+    }
+
+  
 
     // Contenedor Sección Introducción
     @include seccion-introduccion;

@@ -186,17 +186,7 @@ nav{
 // Reducción 65%
 @media (max-width: 480px){
     nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 0 auto;
-        height: 0.3516rem; 
-        position: fixed;
-        top: 0.6329rem; 
-        left: 0;
-        z-index: 100;
-        opacity: 80%;
-        justify-content: center;
+        display: none;
     
         // Imagenes portafolio en navbar
         .portafolio {

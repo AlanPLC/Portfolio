@@ -4,14 +4,13 @@
 @mixin seccion-introduccion{
     
     .portfolio-introduccion-cont{
-        width: 100%;
         display: flex;
         flex-direction: column;
-        padding-top: 1rem;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
         gap: 1rem;
+        margin: 0 auto;
+        max-width: 60rem;
+        width: 100%;
+
         
         .portfolio-introduccion-cont-1{
             display: flex;
@@ -123,23 +122,22 @@
     // Reducido un 25%
     @media (max-width:1024px){
         .portfolio-introduccion-cont {
-            width: 100%;
             display: flex;
             flex-direction: column;
-            padding-top: 0.75rem; /* 1rem -> reducido un 25% */
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             margin: 0 auto;
-            gap: 0.75rem; /* 1rem -> reducido un 25% */
+            max-width: 45rem;
+            width: 100%;
             
             .portfolio-introduccion-cont-1 {
                 display: flex;
                 flex-direction: row;
-                box-shadow: 9px 9px 2.25px rgba(0, 0, 0, 0.30); /* Reducido un 25% */
-                padding: 1.5rem; /* 2rem -> reducido un 25% */
-                height: 336px; /* 448px -> reducido un 25% */
+                box-shadow: 9px 9px 2.25px rgba(0, 0, 0, 0.30); 
+                padding: 1.5rem; 
+                height: 336px; 
                 background-color: $blanco-principal;
-                border-radius: 3.75px; /* 5px -> reducido un 25% */
+                border-radius: 3.75px; 
                 align-items: center;
                 
                 // Textos de Introducción
@@ -148,40 +146,40 @@
                     padding: 0;
                 }
                 #name {
-                    left: -30px; /* -40px -> reducido un 25% */
+                    left: -30px; 
                     position: relative;
-                    font-size: 2.1rem; /* 2.8rem -> reducido un 25% */
+                    font-size: 2.1rem; 
                     color: $negro;
-                    text-shadow: 2.25px 2.25px 1.5px rgba(0, 0, 0, 0.5); /* Reducido un 25% */
+                    text-shadow: 2.25px 2.25px 1.5px rgba(0, 0, 0, 0.5); 
                 }
                 #lastname {
-                    left: -30px; /* -40px -> reducido un 25% */
+                    left: -30px;
                     position: relative;
                     margin: 0;
-                    font-size: 2.25rem; /* 3rem -> reducido un 25% */
+                    font-size: 2.25rem; 
                     color: $negro;
-                    text-shadow: 2.25px 2.25px 1.5px rgba(0, 0, 0, 0.5); /* Reducido un 25% */
+                    text-shadow: 2.25px 2.25px 1.5px rgba(0, 0, 0, 0.5); 
                 }
     
                 // Descripción h1 con su animación
                 #desc {
                     text-align: center;
-                    font-size: 1.875rem; /* 2.5rem -> reducido un 25% */
+                    font-size: 1.875rem; 
                     color: $blanco-principal;
-                    margin: 0 3.75rem; /* 5rem -> reducido un 25% */
+                    margin: 0 3.75rem; 
                     position: relative;
                     display: inline-block;
-                    text-shadow: 0.75px 0.75px #ff00c1, -0.75px -0.75px #00f4ff; /* Reducido un 25% */
+                    text-shadow: 0.75px 0.75px #ff00c1, -0.75px -0.75px #00f4ff; 
                     animation: glitch 2s infinite;
                 }
                 .glitch-sec {
-                    width: 384px; /* 512px -> reducido un 25% */
-                    left: -48.75px; /* -65px -> reducido un 25% */
+                    width: 384px; 
+                    left: -48.75px; 
                     background-color: $negro;
-                    border-radius: 3.75px; /* 5px -> reducido un 25% */
-                    padding: 0.375rem; /* 0.5rem -> reducido un 25% */
+                    border-radius: 3.75px; 
+                    padding: 0.375rem; 
                     position: relative;
-                    box-shadow: 4.5px 3.375px 1.125px rgba(0, 0, 0, 0.25); /* Reducido un 25% */
+                    box-shadow: 4.5px 3.375px 1.125px rgba(0, 0, 0, 0.25); 
                 }
                 #desc::before,
                 #desc::after {
@@ -197,14 +195,14 @@
                     opacity: 0.7;
                 }
                 #desc::before {
-                    left: 0.75px; /* 1px -> reducido un 25% */
-                    text-shadow: -0.75px 0 #ff0000; /* Reducido un 25% */
+                    left: 0.75px;
+                    text-shadow: -0.75px 0 #ff0000; 
                     animation: glitch-top 2s infinite;
                 }
     
                 #desc::after {
-                    left: -0.75px; /* -1px -> reducido un 25% */
-                    text-shadow: -0.75px 0 #0000ff; /* Reducido un 25% */
+                    left: -0.75px; 
+                    text-shadow: -0.75px 0 #0000ff; 
                     animation: glitch-bottom 2s infinite;
                 }
     
@@ -213,8 +211,8 @@
     
                 // Imagen de Introducción
                 .introduccion-img {
-                    width: 288px; /* 384px -> reducido un 25% */
-                    height: 216px; /* 288px -> reducido un 25% */
+                    width: 288px; 
+                    height: 216px; 
                     z-index: 99;
                 }
             }
@@ -226,10 +224,9 @@
                 // Flecha inferior Introducción y su animación
                 .flecha-img {
                     filter: invert(1);
-                    width: 48px; /* 64px -> reducido un 25% */
-                    height: 60px; /* 80px -> reducido un 25% */
+                    width: 48px; 
+                    height: 60px;
                     animation: subirBajar 2.5s ease-in-out infinite;
-                    margin: 0 auto;
                 }
     
                 // Animación movimiento flecha Introducción
@@ -237,68 +234,69 @@
             }
         }        
     }
-    // Reducido un 50%
+    // Reducido un 40%
     @media (max-width: 768px){
         .portfolio-introduccion-cont {
-            width: 100%;
             display: flex;
             flex-direction: column;
-            padding-top: 0.5rem; /* 1rem -> reducido un 50% */
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             margin: 0 auto;
-            gap: 0.5rem; /* 1rem -> reducido un 50% */
+            max-width: 36rem;
+            width: 100%;
+            
             
             .portfolio-introduccion-cont-1 {
+                width: 95%;
                 display: flex;
                 flex-direction: row;
-                box-shadow: 6px 6px 1.5px rgba(0, 0, 0, 0.30); /* Reducido un 50% */
-                padding: 1rem; /* 2rem -> reducido un 50% */
-                height: 224px; /* 448px -> reducido un 50% */
+                box-shadow: 8.8px 8.8px 2.2px rgba(0, 0, 0, 0.30);
+                padding: 1.1rem;
+                height: 246.4px;
                 background-color: $blanco-principal;
-                border-radius: 2.5px; /* 5px -> reducido un 50% */
+                border-radius: 2.75px;
                 align-items: center;
-                
+        
                 // Textos de Introducción
                 p {
                     margin: 0;
                     padding: 0;
                 }
                 #name {
-                    left: -20px; /* -40px -> reducido un 50% */
+                    left: -22px;
                     position: relative;
-                    font-size: 1.4rem; /* 2.8rem -> reducido un 50% */
+                    font-size: 1.54rem;
                     color: $negro;
-                    text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.5); /* Reducido un 50% */
+                    text-shadow: 1.65px 1.65px 1.1px rgba(0, 0, 0, 0.5);
                 }
                 #lastname {
-                    left: -20px; /* -40px -> reducido un 50% */
+                    left: -22px;
                     position: relative;
                     margin: 0;
-                    font-size: 1.5rem; /* 3rem -> reducido un 50% */
+                    font-size: 1.65rem;
                     color: $negro;
-                    text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.5); /* Reducido un 50% */
+                    text-shadow: 1.65px 1.65px 1.1px rgba(0, 0, 0, 0.5);
                 }
-    
+        
                 // Descripción h1 con su animación
                 #desc {
                     text-align: center;
-                    font-size: 1.25rem; /* 2.5rem -> reducido un 50% */
+                    font-size: 1.375rem;
                     color: $blanco-principal;
-                    margin: 0 2.5rem; /* 5rem -> reducido un 50% */
+                    margin: 0 2.75rem;
                     position: relative;
                     display: inline-block;
-                    text-shadow: 0.5px 0.5px #ff00c1, -0.5px -0.5px #00f4ff; /* Reducido un 50% */
+                    text-shadow: 0.55px 0.55px #ff00c1, -0.55px -0.55px #00f4ff;
                     animation: glitch 2s infinite;
                 }
                 .glitch-sec {
-                    width: 256px; /* 512px -> reducido un 50% */
-                    left: -32.5px; /* -65px -> reducido un 50% */
+                    width: 281.6px;
+                    left: -35.75px;
                     background-color: $negro;
-                    border-radius: 2.5px; /* 5px -> reducido un 50% */
-                    padding: 0.25rem; /* 0.5rem -> reducido un 50% */
+                    border-radius: 2.75px;
+                    padding: 0.275rem;
                     position: relative;
-                    box-shadow: 3px 2.5px 1px rgba(0, 0, 0, 0.25); /* Reducido un 50% */
+                    box-shadow: 4.4px 3.3px 1.1px rgba(0, 0, 0, 0.25);
                 }
                 #desc::before,
                 #desc::after {
@@ -310,167 +308,156 @@
                     height: 100%;
                     background: $negro;
                     overflow: hidden;
-                    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+                    clip-path: polygon(0 0, 100% 0, 100% 24.75%, 0 24.75%);
                     opacity: 0.7;
                 }
                 #desc::before {
-                    left: 0.5px; /* 1px -> reducido un 50% */
-                    text-shadow: -0.5px 0 #ff0000; /* Reducido un 50% */
+                    left: 0.55px;
+                    text-shadow: -0.55px 0 #ff0000;
                     animation: glitch-top 2s infinite;
                 }
-    
+        
                 #desc::after {
-                    left: -0.5px; /* -1px -> reducido un 50% */
-                    text-shadow: -0.5px 0 #0000ff; /* Reducido un 50% */
+                    left: -0.55px;
+                    text-shadow: -0.55px 0 #0000ff;
                     animation: glitch-bottom 2s infinite;
                 }
-    
+        
                 // Animación Glitch Introducción
                 @include glitch-animation;
-    
+        
                 // Imagen de Introducción
                 .introduccion-img {
-                    width: 192px; /* 384px -> reducido un 50% */
-                    height: 144px; /* 288px -> reducido un 50% */
+                    width: 211.2px;
+                    height: 158.4px;
                     z-index: 99;
                 }
             }
-    
+        
             .portfolio-introduccion-cont-2 {
                 display: flex;
                 justify-content: center;
                 @include portfolio-containers;
+        
                 // Flecha inferior Introducción y su animación
                 .flecha-img {
                     filter: invert(1);
-                    width: 32px; /* 64px -> reducido un 50% */
-                    height: 40px; /* 80px -> reducido un 50% */
-                    animation: subirBajar 2.5s ease-in-out infinite;
-                   
-                }
-    
-                // Animación movimiento flecha Introducción
-                @include movimiento-flecha-introduccion;
-            }
-        }    
-    }
-
-    // Reducido un 65%
-    @media (max-width: 480px){
-        .portfolio-introduccion-cont {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            padding-top: 0.3515625rem; /* 1rem -> reducido un 75% */
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-            gap: 0.3515625rem; /* 1rem -> reducido un 75% */
-            
-            .portfolio-introduccion-cont-1 {
-                display: flex;
-                flex-direction: row;
-                box-shadow: 5.90625px 5.90625px 1.4765625px rgba(0, 0, 0, 0.30); /* Reducido un 75% */
-                padding: 0.703125rem; /* 2rem -> reducido un 75% */
-                height: 157.5px; /* 448px -> reducido un 75% */
-                background-color: $blanco-principal;
-                border-radius: 1.7578125px; /* 5px -> reducido un 75% */
-                align-items: center;
-                
-                // Textos de Introducción
-                p {
-                    margin: 0;
-                    padding: 0;
-                }
-                #name {
-                    left: -14.0625px; /* -40px -> reducido un 75% */
-                    position: relative;
-                    font-size: 0.984375rem; /* 2.8rem -> reducido un 75% */
-                    color: $negro;
-                    text-shadow: 0.87890625px 0.87890625px 0.703125px rgba(0, 0, 0, 0.5); /* Reducido un 75% */
-                }
-                #lastname {
-                    left: -14.0625px; /* -40px -> reducido un 75% */
-                    position: relative;
-                    margin: 0;
-                    font-size: 1.0546875rem; /* 3rem -> reducido un 75% */
-                    color: $negro;
-                    text-shadow: 0.87890625px 0.87890625px 0.703125px rgba(0, 0, 0, 0.5); /* Reducido un 75% */
-                }
-    
-                // Descripción h1 con su animación
-                #desc {
-                    text-align: center;
-                    font-size: 0.87890625rem; /* 2.5rem -> reducido un 75% */
-                    color: $blanco-principal;
-                    margin: 0 1.7578125rem; /* 5rem -> reducido un 75% */
-                    position: relative;
-                    display: inline-block;
-                    text-shadow: 0.3515625px 0.3515625px #ff00c1, -0.3515625px -0.3515625px #00f4ff; /* Reducido un 75% */
-                    animation: glitch 2s infinite;
-                }
-                .glitch-sec {
-                    width: 180px; /* 512px -> reducido un 75% */
-                    left: -18.984375px; /* -65px -> reducido un 75% */
-                    background-color: $negro;
-                    border-radius: 1.7578125px; /* 5px -> reducido un 75% */
-                    padding: 0.17578125rem; /* 0.5rem -> reducido un 75% */
-                    position: relative;
-                    box-shadow: 2.4609375px 1.7578125px 0.703125px rgba(0, 0, 0, 0.25); /* Reducido un 75% */
-                }
-                #desc::before,
-                #desc::after {
-                    content: attr(data-text);
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: $negro;
-                    overflow: hidden;
-                    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-                    opacity: 0.7;
-                }
-                #desc::before {
-                    left: 0.3515625px; /* 1px -> reducido un 75% */
-                    text-shadow: -0.3515625px 0 #ff0000; /* Reducido un 75% */
-                    animation: glitch-top 2s infinite;
-                }
-    
-                #desc::after {
-                    left: -0.3515625px; /* -1px -> reducido un 75% */
-                    text-shadow: -0.3515625px 0 #0000ff; /* Reducido un 75% */
-                    animation: glitch-bottom 2s infinite;
-                }
-    
-                // Animación Glitch Introducción
-                @include glitch-animation;
-    
-                // Imagen de Introducción
-                .introduccion-img {
-                    width: 135px; /* 384px -> reducido un 75% */
-                    height: 101.25px; /* 288px -> reducido un 75% */
-                    z-index: 99;
-                }
-            }
-    
-            .portfolio-introduccion-cont-2 {
-                display: flex;
-                justify-content: center;
-                @include portfolio-containers;
-                // Flecha inferior Introducción y su animación
-                .flecha-img {
-                    filter: invert(1);
-                    width: 22.5px; /* 64px -> reducido un 75% */
-                    height: 28.125px; /* 80px -> reducido un 75% */
+                    width: 40,656px;
+                    height: 50.6px;
                     animation: subirBajar 2.5s ease-in-out infinite;
                     margin: 0 auto;
                 }
-    
+        
                 // Animación movimiento flecha Introducción
                 @include movimiento-flecha-introduccion;
             }
-        }    
-    
+        }
+    }
+
+    // Reducido un 60%
+    @media (max-width: 480px){
+        .portfolio-introduccion-cont {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: 22rem;
+            max-width: 100%;
+            .portfolio-introduccion-cont-1 {
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                box-shadow: 6.4px 6.4px 1.6px rgba(0, 0, 0, 0.30);
+                background-color: $blanco-principal;
+                border-radius: 2px;
+                
+                .intro-info{
+                    width: 100%;
+                }
+
+                // Textos de Introducción
+                p {
+                    text-align:center;
+                    padding: 0;
+                    font-size: 1.2rem;
+                    color: $negro;
+                    text-shadow: 1.2px 1.2px 0.8px rgba(0, 0, 0, 0.5);
+                }
+                #name,
+                #lastname{
+                    left: 0px;
+                }
+        
+                // Descripción h1 con su animación
+                #desc {
+                    font-size: 1rem;
+                    color: $blanco-principal;
+                    text-shadow: 0.4px 0.4px #ff00c1, -0.4px -0.4px #00f4ff;
+                    animation: glitch 2s infinite;
+                }
+                .glitch-sec {
+                    width: 85%;
+                    margin: 0 auto;
+                    left: 0px;
+                    background-color: $negro;
+                    border-radius: 2px;
+                    box-shadow: 3.2px 2.4px 0.8px rgba(0, 0, 0, 0.25);
+                }
+                #desc::before,
+                #desc::after {
+                    content: attr(data-text);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: $negro;
+                    overflow: hidden;
+                    clip-path: polygon(0 0, 100% 0, 100% 18%, 0 18%);
+                    opacity: 0.7;
+                }
+                #desc::before {
+                    left: 0.4px;
+                    text-shadow: -0.4px 0 #ff0000;
+                    animation: glitch-top 2s infinite;
+                }
+        
+                #desc::after {
+                    left: -0.4px;
+                    text-shadow: -0.4px 0 #0000ff;
+                    animation: glitch-bottom 2s infinite;
+                }
+        
+                // Animación Glitch Introducción
+                @include glitch-animation;
+        
+                // Imagen de Introducción
+                .introduccion-img {
+                    width: 153.6px;
+                    height: 115.2px;
+                    z-index: 99;
+                }
+            }
+        
+            .portfolio-introduccion-cont-2 {
+                display: flex;
+                justify-content: center;
+                @include portfolio-containers;
+        
+                // Flecha inferior Introducción y su animación
+                .flecha-img {
+                    filter: invert(1);
+                    width: 29.44px;
+                    height: 36.8px;
+                    animation: subirBajar 2.5s ease-in-out infinite;
+                    margin: 0 auto;
+                }
+        
+                // Animación movimiento flecha Introducción
+                @include movimiento-flecha-introduccion;
+            }
+        }
     }
 }
