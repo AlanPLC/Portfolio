@@ -15,12 +15,30 @@ html, body{
       radial-gradient(50% 50%,#3ba195 0%  5% ,#000000 6%  15%,#3ba195 16% 25%,#000000 26% 35%,#3ba195 36% 45%,
        #000000 46% 55%,#3ba195 56% 65%,#000000 66% 75%,#3ba195 76% 85%,#000000 86% 95%,
        #0000 96%) 22px 22px;
-  background-size: 44px 44px;
-  background-color: #3ba195;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    background-size: 44px 44px;
+    background-color: #3ba195;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
+  /* Scrollbar para todo el documento */
+  body::-webkit-scrollbar {
+    width: 1rem; 
+  }
+
+  body::-webkit-scrollbar-thumb {
+    border: 2px solid #fff; 
+    background-color: $verde-oscuro; 
+    border-radius: 5px;
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(0, 0, 0,0.5); 
+  }
+
+  body::-webkit-scrollbar-track {
+    background-color: #ccc; 
+  }
   // Fuente a utilizar Poppins
   .poppins-thin {
       font-family: "Poppins", serif;
