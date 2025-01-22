@@ -2,23 +2,23 @@
 @use '../../styles/animations' as *;
 
 @mixin seccion-proyectos{
-    @media (min-width: 1024px){   
-        .portfolio-proyectos-cont{
-            @include portfolio-containers;
-            .portfolio-proyectos-cont-1{
-                @include section-title-container;
-            }
-    
-            .portfolio-proyectos-cont-2{
-                display: flex;
-                flex-direction: column;
-                border-radius: 5px;
-                padding: 0.5rem 0.5rem 0 0.5rem;
-                box-shadow: 16px 16px 4px rgba(0, 0, 0, 0.30);
-                background-color: $blanco-principal;
-                overflow: auto;
-                
-            }
+    .portfolio-proyectos-cont{
+        @include portfolio-containers;
+        .portfolio-proyectos-cont-1{
+            @include section-title-container;
+        }
+
+        .portfolio-proyectos-cont-2{
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            padding: 0.5rem 0.5rem 0 0.5rem;
+            box-shadow: 16px 16px 4px rgba(0, 0, 0, 0.30);
+            background-color: $blanco-principal;
+            overflow: auto;
+            
         }
     }
 }
+//     @media (min-width: 1024px){   
+// }

@@ -2,154 +2,154 @@
 @use '../../styles/animations' as *;
 
 @mixin seccion-contacto{
-    @media (min-width: 1024px){
-        .portfolio-contacto-cont{
-            @include portfolio-containers;
-            .portfolio-contacto-cont-1{
-                @include section-title-container;
-            }
-    
-            .portfolio-contacto-cont-2{
+    .portfolio-contacto-cont{
+        @include portfolio-containers;
+        .portfolio-contacto-cont-1{
+            @include section-title-container;
+        }
+
+        .portfolio-contacto-cont-2{
+            display: flex;
+            flex-direction: row;
+            border-radius: 5px;
+            box-shadow: 16px 16px 4px rgba(0, 0, 0, 0.30);
+            background-color: $negro;
+            overflow: auto;
+            
+            .portfolio-contacto-cont-2-A{
+                gap: 0;
+                padding: 2rem 1.5rem;
                 display: flex;
-                flex-direction: row;
-                border-radius: 5px;
-                box-shadow: 16px 16px 4px rgba(0, 0, 0, 0.30);
-                background-color: $negro;
-                overflow: auto;
-                
-                .portfolio-contacto-cont-2-A{
-                    gap: 0;
-                    padding: 2rem 1.5rem;
+                flex-direction: column;
+                width: 50%;
+                background-color: $blanco-principal;
+                .correo,
+                .github,
+                .linkedin{
+                    margin: auto 0;
                     display: flex;
-                    flex-direction: column;
-                    width: 50%;
-                    background-color: $blanco-principal;
-                    .correo,
-                    .github,
-                    .linkedin{
-                        margin: auto 0;
-                        display: flex;
-                        flex-direction: row;
-                        gap: 0.5rem;
-                        align-items: center;
-                        height: fit-content;
+                    flex-direction: row;
+                    gap: 0.5rem;
+                    align-items: center;
+                    height: fit-content;
+                }
+                p{
+                    color: $negro;
+                }
+                
+                .icon-svg{
+                    min-width: 2rem;
+                    margin-right: 0.5rem;
+                    width: 2rem;
+                    height: auto;
+                }
+                .copy{
+                    border: none;
+                    cursor: pointer;
+                    width: 1.2rem;
+                    background: none;
+                    min-width: 1.2rem;
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                button{
+                    justify-content: space-between;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: row;
+                    height: 3rem;
+                    border-radius: 5px;
+                    background-color: $negro;
+                    color: $blanco-principal;
+                    cursor: pointer;
+                    .cv-svg{
+                        margin-left: -0.5rem;
+                        margin-right: 0.5rem;
+                        filter: invert(1);
+                        width: 1rem;
                     }
                     p{
-                        color: $negro;
-                    }
-                    
-                    .icon-svg{
-                        min-width: 2rem;
-                        margin-right: 0.5rem;
-                        width: 2rem;
-                        height: auto;
-                    }
-                    .copy{
-                        border: none;
-                        cursor: pointer;
-                        width: 1.2rem;
-                        background: none;
-                        min-width: 1.2rem;
-                        img{
-                            width: 100%;
-                        }
-                    }
-    
-                    button{
-                        justify-content: space-between;
-                        align-items: center;
-                        display: flex;
-                        flex-direction: row;
-                        height: 3rem;
-                        border-radius: 5px;
-                        background-color: $negro;
+                        margin: 0 auto;
+                        text-align: right;
                         color: $blanco-principal;
-                        cursor: pointer;
-                        .cv-svg{
-                            margin-left: -0.5rem;
-                            margin-right: 0.5rem;
-                            filter: invert(1);
-                            width: 1rem;
-                        }
-                        p{
-                            margin: 0 auto;
-                            text-align: right;
-                            color: $blanco-principal;
-                        }
                     }
-                    
                 }
-                .portfolio-contacto-cont-2-B{
-                    padding: 1rem;
-                    width: 50%;
-                    background-color: $negro;
-                    border-radius: 5px;
-                    h3{
-                        color: $blanco-principal;
-                        font-size: 1.5rem;
-                        margin: 0 1rem 1rem 1rem;
-    
-                    }
-                    form{
+                
+            }
+            .portfolio-contacto-cont-2-B{
+                padding: 1rem;
+                width: 50%;
+                background-color: $negro;
+                border-radius: 5px;
+                h3{
+                    color: $blanco-principal;
+                    font-size: 1.5rem;
+                    margin: 0 1rem 1rem 1rem;
+
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+
+                    .input-container {
                         display: flex;
-                        flex-direction: column;
-    
-                        .input-container {
-                            display: flex;
-                            position: relative;
-                            margin: 0 0 0.5rem 0;
-                            align-items: center;
-                            
-                            input,
-                            textarea{
-                                margin: 0 auto;
-                                width: 24rem;
-                                max-width: 24rem;
-                                padding: 0.8rem;
-                                border: 4px solid #000000;
-                                border-radius: 5px;
-                                font-size: 1rem;
-                                background-color: #f9f9f9;
-                                color: #333;
-                                transition: border-color 0.3s ease, background-color 0.3s ease;
-                                outline: none;
-                                resize: none;
-                          
-                              &:focus {
-                                border-color: $verde-principal;
-                              }
-                          
-                              &:focus + label,
-                              &:valid + label {
-                                transform: translateY(-2.4rem) scale(0.8);
-                                color: $verde-oscuro;
-                                letter-spacing: 0.2rem;
-                              }
-                            }
-                          
-                            label {
-                                border-radius: 5px;
-                                background-color: $blanco-principal;
-                                padding: 0 1rem;
-                                position: absolute;
-                                top: 50%;
-                                left: 1rem;
-                                transform: translateY(-50%);
-                                font-size: 1rem;
-                                color: $negro;
-                                pointer-events: none;
-                                transition: all 0.3s ease;
-                            }
-                          }
-                          button{
-                            border-radius: 5px;
+                        position: relative;
+                        margin: 0 0 0.5rem 0;
+                        align-items: center;
+                        
+                        input,
+                        textarea{
                             margin: 0 auto;
-                            width: 26rem;
-                            height: 3rem;
+                            width: 24rem;
+                            max-width: 24rem;
+                            padding: 0.8rem;
+                            border: 4px solid #000000;
+                            border-radius: 5px;
+                            font-size: 1rem;
+                            background-color: #f9f9f9;
+                            color: #333;
+                            transition: border-color 0.3s ease, background-color 0.3s ease;
+                            outline: none;
+                            resize: none;
+                      
+                          &:focus {
+                            border-color: $verde-principal;
                           }
-                    }
+                      
+                          &:focus + label,
+                          &:valid + label {
+                            transform: translateY(-2.4rem) scale(0.8);
+                            color: $verde-oscuro;
+                            letter-spacing: 0.2rem;
+                          }
+                        }
+                      
+                        label {
+                            border-radius: 5px;
+                            background-color: $blanco-principal;
+                            padding: 0 1rem;
+                            position: absolute;
+                            top: 50%;
+                            left: 1rem;
+                            transform: translateY(-50%);
+                            font-size: 1rem;
+                            color: $negro;
+                            pointer-events: none;
+                            transition: all 0.3s ease;
+                        }
+                      }
+                      button{
+                        border-radius: 5px;
+                        margin: 0 auto;
+                        width: 26rem;
+                        height: 3rem;
+                      }
                 }
             }
         }
     }
 }
+//     @media (min-width: 1024px){
+// }
