@@ -45,6 +45,7 @@
         opacity: 0;
         overflow: hidden;
         padding-bottom: 1rem;
+        overflow-y: auto;
         transition: 
             height 0.5s ease-in-out,
             opacity 0.5s ease-in-out;
@@ -60,28 +61,33 @@
                 margin-left: 0;
             }
             ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
                 li{
-                    color: $blanco-principal;
-                    font-size: 1rem;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1rem;
+                    img{
+                        margin: 0;
+                        width: 1rem;
+                    }
+                    p{
+                        color: $blanco-principal;
+                        font-size: 1rem;
+                    }
                 }
             }
         }
-        .imgs {
-            width: 50%;
-            height: 24rem;
-            overflow: hidden;
-            position: relative;
-            margin: 1rem 0;
-        }
-        
-        .imgs img {
+        .p-img {
             display: flex;
-            margin: 0 auto;
+            margin: 1rem auto;
             height: 100%;
             object-fit: cover;
             border-radius: 5px;
         }
         
+     
     
     }
     .animated{
@@ -90,6 +96,25 @@
         transition: 
             height 0.5s ease-in-out,
             opacity 0.5s ease-in-out;
+    }
+
+    // Estilado Scroll contenedor acordeon
+    .ac-toggle::-webkit-scrollbar {
+        width: 1rem; 
+    }
+    
+    .ac-toggle::-webkit-scrollbar-thumb {
+        border: 2px solid #fff; 
+        background-color: $verde-oscuro; 
+        border-radius: 5px;
+    }
+    
+    .ac-toggle::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(0, 0, 0,0.5); 
+    }
+    
+    .ac-toggle::-webkit-scrollbar-track {
+        background-color: #ccc; 
     }
 }
 
@@ -143,6 +168,7 @@
             opacity: 0;
             overflow: hidden;
             padding-bottom: 0.75rem;
+            overflow-y: auto;
             transition: 
                 height 0.5s ease-in-out,
                 opacity 0.5s ease-in-out;
@@ -158,26 +184,28 @@
                     text-align: left;
                     margin-left: 0;
                 }
-    
-                ul {
-                    li {
-                        color: $blanco-principal;
-                        font-size: 0.75rem;
+                ul{
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0.75rem;
+                        img{
+                            width: 0.75rem;
+                        }
+                        p{
+                            color: $blanco-principal;
+                            font-size: 0.75rem;
+                        }
                     }
                 }
             }
     
-            .imgs {
-                width: 50%;
-                height: 18rem;
-                overflow: hidden;
-                position: relative;
-                margin: 0.75rem 0;
-            }
-    
-            .imgs img {
+            .p-img {
                 display: flex;
-                margin: 0 auto;
+                margin: 0.75rem auto;
                 height: 100%;
                 object-fit: cover;
                 border-radius: 3.75px;
@@ -191,10 +219,20 @@
                 height 0.5s ease-in-out,
                 opacity 0.5s ease-in-out;
         }
+        // Estilado Scroll contenedor acordeon
+        .ac-toggle::-webkit-scrollbar {
+            width: 0.75rem; 
+        }
+        
+        .ac-toggle::-webkit-scrollbar-thumb {
+            border: 1.5px solid #fff; 
+            border-radius: 3.75px;
+        }
     }
     
 }
 
+// Reducción 40%
 @media (max-width: 768px){
     .acordeon {
         border-radius: 3px;
@@ -244,6 +282,7 @@
             opacity: 0;
             overflow: hidden;
             padding-bottom: 0.6rem;
+            overflow-y: auto;
             transition: 
                 height 0.5s ease-in-out,
                 opacity 0.5s ease-in-out;
@@ -259,30 +298,35 @@
                     text-align: left;
                     margin-left: 0;
                 }
-    
-                ul {
-                    li {
-                        color: $blanco-principal;
-                        font-size: 0.6rem;
+                
+                ul{
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0.6rem;
+                        img{
+                            width: 0.6rem;
+                        }
+                        p{
+                            color: $blanco-principal;
+                            font-size: 0.6rem;
+                        }
                     }
                 }
             }
     
-            .imgs {
-                width: 50%;
-                height: 14.4rem;
-                overflow: hidden;
-                position: relative;
-                margin: 0.6rem 0;
-            }
-    
-            .imgs img {
+            .p-img{
                 display: flex;
-                margin: 0 auto;
+                margin: 0.60rem auto;
                 height: 100%;
                 object-fit: cover;
                 border-radius: 3px;
             }
+    
+     
         }
     
         .animated {
@@ -291,6 +335,15 @@
             transition: 
                 height 0.5s ease-in-out,
                 opacity 0.5s ease-in-out;
+        }
+        .ac-toggle::-webkit-scrollbar {
+            width: 0.6rem; 
+        }
+        
+        .ac-toggle::-webkit-scrollbar-thumb {
+            border: 1.2px solid #fff; 
+            background-color: $verde-oscuro; 
+            border-radius: 3px;
         }
     }    
 }
@@ -321,7 +374,7 @@
                 justify-content: space-between;
     
                 span {
-                    font-size: 0.48rem;
+                    font-size: 1rem;
                     color: $blanco-principal;
                     margin: 0;
                 }
@@ -339,59 +392,71 @@
         }
     
         .ac-toggle {
+            max-height: 0;
             border-top: 0.4px solid $blanco-principal;
             display: flex;
-            height: 0;
+            flex-direction: column;
             opacity: 0;
             overflow: hidden;
             padding-bottom: 0.4rem;
-            transition: 
-                height 0.5s ease-in-out,
-                opacity 0.5s ease-in-out;
+            overflow-y: auto;
+            transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
     
             .info {
-                width: 50%;
-                margin-right: 0.4rem;
-                height: 100%;
-    
+                width: 100%;
+
                 p {
                     color: $blanco-principal;
-                    font-size: 0.4rem;
+                    font-size: 0.7rem;
                     text-align: left;
                     margin-left: 0;
                 }
-    
-                ul {
-                    li {
-                        color: $blanco-principal;
-                        font-size: 0.4rem;
+                ul{
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    height: auto;
+                    li{
+                        margin: 0;
+                        height: auto;
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0.5rem;
+                        img{
+                            margin: 0;
+                            width: 0.7rem;
+                        }
+                        p{
+                            color: $blanco-principal;
+                            font-size: 0.7rem;
+                        }
                     }
                 }
             }
-    
-            .imgs {
-                width: 50%;
-                height: 9.6rem;
-                overflow: hidden;
-                position: relative;
-                margin: 0.4rem 0;
+            
+            .p-img{
+                margin: 1rem auto 0;
+                max-width: 100%;
+                height: auto;
+              
             }
-    
-            .imgs img {
-                display: flex;
-                margin: 0 auto;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 2px;
-            }
+
         }
     
         .animated {
-            max-height: 9.6rem;
+            max-height: 14.4rem;
             opacity: 1;
-            transition: 
-                height 0.5s ease-in-out,
-                opacity 0.5s ease-in-out;
+            transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+           
+        }
+        .ac-toggle::-webkit-scrollbar {
+            width: 0.4rem; 
+        }
+        
+        .ac-toggle::-webkit-scrollbar-thumb {
+            border: 0.8px solid #fff; 
+            background-color: $verde-oscuro; 
+            border-radius: 2px;
         }
     }    
 }

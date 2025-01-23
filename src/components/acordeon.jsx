@@ -35,7 +35,8 @@ export default function Acordeon() {
         content_list: [
           "Gestión de inventario, proveedores y ventas.",
           "Diseño de un backend eficiente con Node.js y MySQL, junto con un front-end atractivo utilizando React.",
-          "Enfoque en seguridad y manejo de datos sensibles."
+          "Enfoque en seguridad y manejo de datos sensibles.",
+          "Link Github: https://github.com/AlanPLC/TP-Final-Lab.-IV"
         ],
         img_url: "./Proyectos/minimarket.png",
     },
@@ -80,7 +81,7 @@ export default function Acordeon() {
               className={`ac-toggle ${isActive ? "animated" : ""}`}
               ref={refHeight}
               style={{
-                height: isActive ? `${refHeight.current?.scrollHeight}px ` : "0px",
+                height: isActive ? `${refHeight.current?.scrollHeight }px ` : "0px",
               }}
             >
               <div className="info">
@@ -88,14 +89,17 @@ export default function Acordeon() {
                 <ul>
                   {
                     item.content_list.map((listItem, index)=>(
-                      <li key={index} className="poppins-regular-italic">{listItem}</li>
+                      
+                      <li key={index} className="poppins-regular-italic">
+                        <img src="./Proyectos/code.svg" alt={"Li-Img"}/>
+                        <p>{listItem}</p>
+                      </li>
                     ))
                   }
                 </ul>
               </div>
-              <div className="imgs">
-                  <img loading="lazy" key={index} src={item.img_url} alt={"Imagen Proyecto"}/>
-              </div>
+              <img loading="lazy" key={index} src={item.img_url} alt={"Imagen Proyecto"} className="p-img"/>
+  
             </div>
           </div>
         );
