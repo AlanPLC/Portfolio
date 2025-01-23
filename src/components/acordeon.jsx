@@ -94,7 +94,7 @@ export default function Acordeon() {
                 </ul>
               </div>
               <div className="imgs">
-                  <img key={index} src={item.img_url} alt={"Imagen Proyecto"}/>
+                  <img loading="lazy" key={index} src={item.img_url} alt={"Imagen Proyecto"}/>
               </div>
             </div>
           </div>

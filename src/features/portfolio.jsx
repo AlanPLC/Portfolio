@@ -30,7 +30,7 @@ export default function Portfolio (){
                     <h2 className='poppins-bold'>SOBRE MÍ</h2>
                 </div>
                 <div className='portfolio-sobre-mi-cont-2'>
-                    <img src="./SobreMi/sobre-mi-img.jpg" alt="sobre-mi-img" className="sobre-mi-img"/>
+                    <img src="./SobreMi/sobre-mi-img.jpg" loading="lazy" alt="sobre-mi-img" className="sobre-mi-img"/>
                     <p id='parrafo-sobre-mi' className='poppins-regular'>¡Hola! Soy un apasionado del desarrollo web y recientemente me gradué como Técnico Universitario en Programación en la Universidad Tecnológica Nacional. Trabajo como desarrollador fullstack en entornos RESTful utilizando React en el frontend y Node con MySQL en el backend. Siempre estoy buscando nuevos desafíos que me permitan crecer como profesional y aportar valor a proyectos innovadores.</p>
                 </div>
             </div>
@@ -42,23 +42,23 @@ export default function Portfolio (){
                 </div>
                 <div className='portfolio-conocimientos-cont-2'>
                     <ul className='conocimientos-list'>
-                        <li><img src="./Conocimientos/html-5.png" alt="HTML"/></li>
-                        <li><img src="./Conocimientos/css-3.png" alt="CSS"/></li>
-                        <li><img src="./Conocimientos/js.png" alt="JavaScript"/></li>
-                        <li><img src="./Conocimientos/react.png" alt="React"/></li>
-                        <li><img src="./Conocimientos/nodo-js.png" alt="NodeJS"/></li>
-                        <li><img src="./Conocimientos/mysql.png" alt="MySQL"/></li>
-                        <li><img src="./Conocimientos/git.png" alt="GIT"/></li>
-                        <li><img src="./Conocimientos/piton.png" alt="Python"/></li>
+                        <li><img src="./Conocimientos/html-5.png" loading="lazy" alt="HTML"/></li>
+                        <li><img src="./Conocimientos/css-3.png" loading="lazy" alt="CSS"/></li>
+                        <li><img src="./Conocimientos/js.png" loading="lazy" alt="JavaScript"/></li>
+                        <li><img src="./Conocimientos/react.png" loading="lazy" alt="React"/></li>
+                        <li><img src="./Conocimientos/nodo-js.png" loading="lazy" alt="NodeJS"/></li>
+                        <li><img src="./Conocimientos/mysql.png" loading="lazy" alt="MySQL"/></li>
+                        <li><img src="./Conocimientos/git.png" loading="lazy" alt="GIT"/></li>
+                        <li><img src="./Conocimientos/piton.png" loading="lazy" alt="Python"/></li>
                         {/* Duplicado de imagenes para efecto circular */}
-                        <li><img src="./Conocimientos/html-5.png" alt="HTML"/></li>
-                        <li><img src="./Conocimientos/css-3.png" alt="CSS"/></li>
-                        <li><img src="./Conocimientos/js.png" alt="JavaScript"/></li>
-                        <li><img src="./Conocimientos/react.png" alt="React"/></li>
-                        <li><img src="./Conocimientos/nodo-js.png" alt="NodeJS"/></li>
-                        <li><img src="./Conocimientos/mysql.png" alt="MySQL"/></li>
-                        <li><img src="./Conocimientos/git.png" alt="GIT"/></li>
-                        <li><img src="./Conocimientos/piton.png" alt="Python"/></li>
+                        <li><img src="./Conocimientos/html-5.png" loading="lazy" alt="HTML"/></li>
+                        <li><img src="./Conocimientos/css-3.png" loading="lazy" alt="CSS"/></li>
+                        <li><img src="./Conocimientos/js.png" loading="lazy" alt="JavaScript"/></li>
+                        <li><img src="./Conocimientos/react.png" loading="lazy" alt="React"/></li>
+                        <li><img src="./Conocimientos/nodo-js.png" loading="lazy" alt="NodeJS"/></li>
+                        <li><img src="./Conocimientos/mysql.png" loading="lazy" alt="MySQL"/></li>
+                        <li><img src="./Conocimientos/git.png" loading="lazy" alt="GIT"/></li>
+                        <li><img src="./Conocimientos/piton.png" loading="lazy" alt="Python"/></li>
                     </ul>
                 </div>
                 <hr id='proyectos' style={{opacity:"0"}}/>
@@ -85,7 +85,7 @@ export default function Portfolio (){
                 <div className='portfolio-contacto-cont-2'>
                     <div className="portfolio-contacto-cont-2-A">
                         <div className="correo">
-                            <a href="mailto:tuemail@gmail.com"><img className="icon-svg" src="./correo.svg" alt="Email" />  </a>
+                            <a href="mailto:tuemail@gmail.com"><img loading="lazy" className="icon-svg" src="./Contacto/correo.svg" alt="Email" />  </a>
                             <p id="email-link" className='poppins-regular'>alancarrizo1017@gmail.com</p>
                             <button onClick={() => {
                                 const textToCopy = document.getElementById("email-link").textContent;
@@ -94,11 +94,11 @@ export default function Portfolio (){
                                     .then(() => alert("Texto copiado al portapapeles"))
                                     .catch(() => alert("Error al copiar el texto"));
                                 }} className='copy'>
-                                <img src="./copy.svg" alt="Copiar" className='copy'/>
+                                <img loading="lazy" src="./Contacto/copy.svg" alt="Copiar" className='copy'/>
                             </button>
                         </div>
                         <div className="github">
-                            <a href="https://github.com/AlanPLC"><img className="icon-svg" src="./github.svg" alt="" /></a>
+                            <a href="https://github.com/AlanPLC"><img loading="lazy" className="icon-svg" src="./Contacto/github.svg" alt="" /></a>
                             <p id="github-link" className='poppins-regular'>https://github.com/AlanPLC</p>
                             <button onClick={() => {
                                 const textToCopy = document.getElementById("github-link").textContent;
@@ -107,11 +107,11 @@ export default function Portfolio (){
                                     .then(() => alert("Texto copiado al portapapeles"))
                                     .catch(() => alert("Error al copiar el texto"));
                                 }} className='copy'>
-                                <img src="./copy.svg" alt="Copiar" className='copy'/>
+                                <img loading="lazy" src="./Contacto/copy.svg" alt="Copiar" className='copy'/>
                             </button>
                         </div>
                         <div className="linkedin">
-                            <a href="https://www.linkedin.com/in/alan-pablo-lautaro-carrizo-795968246/"><img className="icon-svg" src="./linkedin.svg" alt="" /></a>
+                            <a href="https://www.linkedin.com/in/alan-pablo-lautaro-carrizo-795968246/"><img loading="lazy" className="icon-svg" src="./Contacto/linkedin.svg" alt="" /></a>
                             <p id="linkedin-link" className='poppins-regular'>https://www.linkedin.com/in/alan-pablo-lautaro-carrizo-795968246/</p>
                             <button onClick={() => {
                                 const textToCopy = document.getElementById("linkedin-link").textContent;
@@ -120,7 +120,7 @@ export default function Portfolio (){
                                     .then(() => alert("Texto copiado al portapapeles"))
                                     .catch(() => alert("Error al copiar el texto"));
                                 }} className='copy'>
-                                <img src="./copy.svg" alt="Copiar" className='copy'/>
+                                <img loading="lazy" src="./Contacto/copy.svg" alt="Copiar" className='copy'/>
                             </button>
                         </div>
                         
