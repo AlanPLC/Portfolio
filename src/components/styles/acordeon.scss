@@ -1,96 +1,397 @@
 @use '../../styles/var' as *;
 
-@media (min-width: 1024px){
-    .acordeon{
-        border-radius: 5px;
-        background-color: $negro;
-        padding: 0.5rem 1rem;
-        margin-bottom: 0.5rem;
+.acordeon{
+    border-radius: 5px;
+    background-color: $negro;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+
+    button{
+        width: 100%;
+        border: none;
+        background-color: rgb(0, 0, 0,0);
+        cursor: pointer;
+        p{
+            color: $blanco-principal;
+            text-align: left;
+            margin: 0;
+        }
+        .ac-head{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            span{
+                font-size: 1.2rem;
+                color: $blanco-principal;
+                margin: 0;
+            }
+            svg{
+                transform: rotate(-90deg);
+                width: 1.8rem;
+                transition: transform 0.3s ease-in-out;
+            }
+            .rotated {
+                transform: rotate(0deg);
+            }
+        }
+    }
+
+
     
-        button{
+    .ac-toggle{
+        border-top: 1px solid $blanco-principal;
+        display: flex;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding-bottom: 1rem;
+        transition: 
+            height 0.5s ease-in-out,
+            opacity 0.5s ease-in-out;
+    
+        .info{
+            width: 50%;
+            margin-right: 1rem;
+            height: 100%;
+            p{
+                color: $blanco-principal;
+                font-size: 1rem;
+                text-align: left;
+                margin-left: 0;
+            }
+            ul{
+                li{
+                    color: $blanco-principal;
+                    font-size: 1rem;
+                }
+            }
+        }
+        .imgs {
+            width: 50%;
+            height: 24rem;
+            overflow: hidden;
+            position: relative;
+            margin: 1rem 0;
+        }
+        
+        .imgs img {
+            display: flex;
+            margin: 0 auto;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        
+    
+    }
+    .animated{
+        max-height: 24rem;
+        opacity: 1;
+        transition: 
+            height 0.5s ease-in-out,
+            opacity 0.5s ease-in-out;
+    }
+}
+
+// Reducción 25%
+@media (max-width: 1024px){
+    .acordeon {
+        border-radius: 3.75px;
+        background-color: $negro;
+        padding: 0.375rem 0.75rem;
+        margin-bottom: 0.375rem;
+    
+        button {
             width: 100%;
             border: none;
-            background-color: rgb(0, 0, 0,0);
+            background-color: rgb(0, 0, 0, 0);
             cursor: pointer;
-            p{
+    
+            p {
                 color: $blanco-principal;
                 text-align: left;
                 margin: 0;
             }
-            .ac-head{
+    
+            .ac-head {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                span{
-                    font-size: 1.2rem;
+    
+                span {
+                    font-size: 0.9rem;
                     color: $blanco-principal;
                     margin: 0;
                 }
-                svg{
+    
+                svg {
                     transform: rotate(-90deg);
-                    width: 1.8rem;
+                    width: 1.35rem;
                     transition: transform 0.3s ease-in-out;
                 }
+    
                 .rotated {
                     transform: rotate(0deg);
-                  }
+                }
             }
         }
     
-     
-        
-        .ac-toggle{
-            border-top: 1px solid $blanco-principal;
+        .ac-toggle {
+            border-top: 0.75px solid $blanco-principal;
             display: flex;
             height: 0;
             opacity: 0;
             overflow: hidden;
-            padding-bottom: 1rem;
+            padding-bottom: 0.75rem;
             transition: 
                 height 0.5s ease-in-out,
                 opacity 0.5s ease-in-out;
-           
-            .info{
+    
+            .info {
                 width: 50%;
-                margin-right: 1rem;
+                margin-right: 0.75rem;
                 height: 100%;
-                p{
+    
+                p {
                     color: $blanco-principal;
-                    font-size: 1rem;
+                    font-size: 0.75rem;
                     text-align: left;
                     margin-left: 0;
                 }
-                ul{
-                    li{
+    
+                ul {
+                    li {
                         color: $blanco-principal;
-                        font-size: 1rem;
+                        font-size: 0.75rem;
                     }
                 }
             }
+    
             .imgs {
                 width: 50%;
-                height: 24rem;
+                height: 18rem;
                 overflow: hidden;
                 position: relative;
-                margin: 1rem 0;
-              }
-              
-              .imgs img {
+                margin: 0.75rem 0;
+            }
+    
+            .imgs img {
                 display: flex;
                 margin: 0 auto;
                 height: 100%;
                 object-fit: cover;
-                border-radius: 5px;
-              }
-            
-         
+                border-radius: 3.75px;
+            }
         }
-        .animated{
-            max-height: 24rem;
+    
+        .animated {
+            max-height: 18rem;
             opacity: 1;
             transition: 
                 height 0.5s ease-in-out,
                 opacity 0.5s ease-in-out;
         }
     }
+    
+}
+
+@media (max-width: 768px){
+    .acordeon {
+        border-radius: 3px;
+        background-color: $negro;
+        padding: 0.3rem 0.6rem;
+        margin-bottom: 0.3rem;
+    
+        button {
+            width: 100%;
+            border: none;
+            background-color: rgb(0, 0, 0, 0);
+            cursor: pointer;
+    
+            p {
+                color: $blanco-principal;
+                text-align: left;
+                margin: 0;
+            }
+    
+            .ac-head {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+    
+                span {
+                    font-size: 0.72rem;
+                    color: $blanco-principal;
+                    margin: 0;
+                }
+    
+                svg {
+                    transform: rotate(-90deg);
+                    width: 1.08rem;
+                    transition: transform 0.3s ease-in-out;
+                }
+    
+                .rotated {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    
+        .ac-toggle {
+            border-top: 0.6px solid $blanco-principal;
+            display: flex;
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
+            padding-bottom: 0.6rem;
+            transition: 
+                height 0.5s ease-in-out,
+                opacity 0.5s ease-in-out;
+    
+            .info {
+                width: 50%;
+                margin-right: 0.6rem;
+                height: 100%;
+    
+                p {
+                    color: $blanco-principal;
+                    font-size: 0.6rem;
+                    text-align: left;
+                    margin-left: 0;
+                }
+    
+                ul {
+                    li {
+                        color: $blanco-principal;
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+    
+            .imgs {
+                width: 50%;
+                height: 14.4rem;
+                overflow: hidden;
+                position: relative;
+                margin: 0.6rem 0;
+            }
+    
+            .imgs img {
+                display: flex;
+                margin: 0 auto;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 3px;
+            }
+        }
+    
+        .animated {
+            max-height: 14.4rem;
+            opacity: 1;
+            transition: 
+                height 0.5s ease-in-out,
+                opacity 0.5s ease-in-out;
+        }
+    }    
+}
+
+@media (max-width: 480px){
+    .acordeon {
+        height: 100%;
+        border-radius: 2px;
+        background-color: $negro;
+        padding: 0.2rem 0.4rem;
+        margin-bottom: 0.2rem;
+    
+        button {
+            width: 100%;
+            border: none;
+            background-color: rgb(0, 0, 0, 0);
+            cursor: pointer;
+    
+            p {
+                color: $blanco-principal;
+                text-align: left;
+                margin: 0;
+            }
+    
+            .ac-head {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+    
+                span {
+                    font-size: 0.48rem;
+                    color: $blanco-principal;
+                    margin: 0;
+                }
+    
+                svg {
+                    transform: rotate(-90deg);
+                    width: 0.72rem;
+                    transition: transform 0.3s ease-in-out;
+                }
+    
+                .rotated {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    
+        .ac-toggle {
+            border-top: 0.4px solid $blanco-principal;
+            display: flex;
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
+            padding-bottom: 0.4rem;
+            transition: 
+                height 0.5s ease-in-out,
+                opacity 0.5s ease-in-out;
+    
+            .info {
+                width: 50%;
+                margin-right: 0.4rem;
+                height: 100%;
+    
+                p {
+                    color: $blanco-principal;
+                    font-size: 0.4rem;
+                    text-align: left;
+                    margin-left: 0;
+                }
+    
+                ul {
+                    li {
+                        color: $blanco-principal;
+                        font-size: 0.4rem;
+                    }
+                }
+            }
+    
+            .imgs {
+                width: 50%;
+                height: 9.6rem;
+                overflow: hidden;
+                position: relative;
+                margin: 0.4rem 0;
+            }
+    
+            .imgs img {
+                display: flex;
+                margin: 0 auto;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 2px;
+            }
+        }
+    
+        .animated {
+            max-height: 9.6rem;
+            opacity: 1;
+            transition: 
+                height 0.5s ease-in-out,
+                opacity 0.5s ease-in-out;
+        }
+    }    
 }
