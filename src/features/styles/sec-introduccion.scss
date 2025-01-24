@@ -362,13 +362,13 @@
             align-items: center;
             justify-content: center;
             margin: 0 auto;
-            width: 22rem;
-            max-width: 100%;
+            width: 90%;
+            max-width: 90%;
             .portfolio-introduccion-cont-1 {
+                width: 100%;
                 justify-content: center;
                 display: flex;
                 flex-direction: column;
-                width: 90%;
                 box-shadow: 6.4px 6.4px 1.6px rgba(0, 0, 0, 0.30);
                 background-color: $blanco-principal;
                 border-radius: 2px;
