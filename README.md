@@ -13,3 +13,7 @@
 
 - **Frontend**: React, SCSS, HTML5, JavaScript.
 - **Herramientas**: Git, GitHub, Vite 
+
+## 📄 Licencias y Atribuciones
+
+Para ver las licencias y atribuciones de los recursos utilizados en este proyecto, consulta el archivo [ATTRIBUTIONS.md](ATTRIBUTIONS.md).
