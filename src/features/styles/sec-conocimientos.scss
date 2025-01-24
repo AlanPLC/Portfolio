@@ -241,7 +241,7 @@
                 display: flex;
                 overflow: hidden;
                 position: relative;
-                height: 3.6rem;
+                height: 5rem;
                 border-radius: 0;
                 border-top: 0.1rem solid $negro;
                 border-bottom: 0.2rem solid $negro;
@@ -283,7 +283,7 @@
                     z-index: 1;
                     background-color: $blanco-principal;
         
-                    width: calc((40px * 16) + (2rem * 15));
+                    width: calc((40px * 16) + (3rem * 15));
                 }
             
                 li {
@@ -291,7 +291,7 @@
                 }
             
                 img {
-                    width: 2rem;
+                    width: 3rem;
                     filter: drop-shadow(4px 4px 1.6px rgba(0, 0, 0, 0.5));
                     transition: transform 0.3s ease;
                     &:hover {
