@@ -1,5 +1,6 @@
 import './styles/portfolio.scss'
 import Acordeon from '../components/acordeon.jsx'
+import Footer from '../components/footer.jsx'
 export default function Portfolio (){
 
     return(
@@ -19,7 +20,7 @@ export default function Portfolio (){
                     </div>
                 </div>
                 <div className='portfolio-introduccion-cont-2'>
-                    <img src="/Introduccion/flecha.png" alt="flecha-img" className='flecha-img' id="sobre-mi"/>
+                    <img src="/Introduccion/flecha.svg" alt="flecha-img" className='flecha-img' id="sobre-mi"/>
                 </div>
 
             </div>
@@ -150,13 +151,14 @@ export default function Portfolio (){
                                 <label htmlFor="asunto" className='poppins-regular'>Asunto</label>
                             </div>
                             <div className="input-container">
-                                <textarea id="mensaje" name="mensaje" required placeholder='Escribe tu mensaje...'></textarea>
+                                <textarea id="mensaje" name="mensaje" required placeholder='Escribe tu mensaje...' className='poppins-regular'></textarea>
                             </div>
                             <button type="submit" className="poppins-bold">ENVIAR</button>
                         </form>
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

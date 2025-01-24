@@ -1,0 +1,15 @@
+@use '../../styles/var' as *;
+
+footer{
+    width: 100%;
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    height: 4rem;
+    background-color: $verde-principal;
+    align-items: center;
+    opacity: 90%;
+    p{
+        font-size: 0.8rem;
+        color: $negro;
+    }
+}

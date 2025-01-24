@@ -107,7 +107,6 @@
             @include portfolio-containers;
             // Flecha inferior Introducción y su animación
             .flecha-img{
-                filter: invert(1);
                 width: 64px;
                 height: 80px;
                 animation: subirBajar 2.5s ease-in-out infinite;
@@ -223,7 +222,6 @@
                 @include portfolio-containers;
                 // Flecha inferior Introducción y su animación
                 .flecha-img {
-                    filter: invert(1);
                     width: 48px; 
                     height: 60px;
                     animation: subirBajar 2.5s ease-in-out infinite;
@@ -341,7 +339,6 @@
         
                 // Flecha inferior Introducción y su animación
                 .flecha-img {
-                    filter: invert(1);
                     width: 40,656px;
                     height: 50.6px;
                     animation: subirBajar 2.5s ease-in-out infinite;
@@ -362,8 +359,8 @@
             align-items: center;
             justify-content: center;
             margin: 0 auto;
-            width: 90%;
-            max-width: 90%;
+            width: 100%;
+            
             .portfolio-introduccion-cont-1 {
                 height: 100%;
                 width: 100%;
@@ -459,11 +456,10 @@
         
                 // Flecha inferior Introducción y su animación
                 .flecha-img {
-                    filter: invert(1);
                     width: 4rem;
                     height: auto;
                     animation: subirBajar 2.5s ease-in-out infinite;
-                    margin: 2rem auto 5rem auto;
+                    margin: 2rem auto 2rem auto;
                 }
         
                 // Animación movimiento flecha Introducción
