@@ -9,7 +9,7 @@ export default function Portfolio (){
             {/* Sección Introducción */}
             <div className="portfolio-introduccion-cont" >
                 <div className='portfolio-introduccion-cont-1'>
-                    <img src="./Introduccion//compucactus.png" alt="introduccion-img" className='introduccion-img'/>
+                    <img src="./Introduccion/compucactus.svg" alt="introduccion-img" className='introduccion-img'/>
                     <div className="intro-info">
                         <p className='poppins-bold' id="lastname">CARRIZO</p>
                         <p className='poppins-bold' id="name">ALAN PABLO LAUTARO</p>

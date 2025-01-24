@@ -365,6 +365,7 @@
             width: 90%;
             max-width: 90%;
             .portfolio-introduccion-cont-1 {
+                height: 100%;
                 width: 100%;
                 justify-content: center;
                 display: flex;
@@ -372,34 +373,42 @@
                 box-shadow: 6.4px 6.4px 1.6px rgba(0, 0, 0, 0.30);
                 background-color: $blanco-principal;
                 border-radius: 2px;
+                padding-bottom: 2rem;
+                
                 
                 .intro-info{
+                    order: 1;
                     width: 100%;
+                    margin: 0.5rem 0 2rem 0;
                 }
 
                 // Textos de Introducción
                 p {
-                    text-align:center;
+                    margin: 0;
+                    text-align: center;
                     padding: 0;
-                    font-size: 1.2rem;
                     color: $negro;
                     text-shadow: 1.2px 1.2px 0.8px rgba(0, 0, 0, 0.5);
                 }
                 #name,
                 #lastname{
+                    font-weight: bolder;
+                    width: 100%;
+                    margin: 0;
+                    font-size: 1.8rem;
                     left: 0px;
                 }
         
                 // Descripción h1 con su animación
                 #desc {
-                    font-size: 1rem;
+                    font-size: 1.8rem;
                     color: $blanco-principal;
                     text-shadow: 0.4px 0.4px #ff00c1, -0.4px -0.4px #00f4ff;
                     animation: glitch 2s infinite;
                 }
                 .glitch-sec {
-                    width: 85%;
-                    margin: 0 auto;
+                    width: 100%;
+                    margin: 0.5rem auto 0 auto;
                     left: 0px;
                     background-color: $negro;
                     border-radius: 2px;
@@ -435,9 +444,11 @@
         
                 // Imagen de Introducción
                 .introduccion-img {
-                    width: 153.6px;
-                    height: 115.2px;
+                    width: 18rem;
+                    height: auto;
                     z-index: 99;
+                    order: 2;
+                    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)), ;
                 }
             }
         
@@ -449,10 +460,10 @@
                 // Flecha inferior Introducción y su animación
                 .flecha-img {
                     filter: invert(1);
-                    width: 29.44px;
-                    height: 36.8px;
+                    width: 4rem;
+                    height: auto;
                     animation: subirBajar 2.5s ease-in-out infinite;
-                    margin: 0 auto 2rem auto;
+                    margin: 2rem auto 5rem auto;
                 }
         
                 // Animación movimiento flecha Introducción
