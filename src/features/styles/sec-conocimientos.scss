@@ -242,8 +242,9 @@
                 overflow: hidden;
                 position: relative;
                 height: 3.6rem;
-                border-radius: 4px;
-        
+                border-radius: 0;
+                border-top: 0.1rem solid $negro;
+                border-bottom: 0.2rem solid $negro;
                 box-shadow: 6.4px 6.4px 1.6px rgba(0, 0, 0, 0.30);
         
                 &::before {

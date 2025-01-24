@@ -120,28 +120,33 @@
             }
         
             .portfolio-sobre-mi-cont-2 {
-                border: 0.2rem solid $blanco-principal;
-                border-radius: 2px;
+                display: flex;
+                flex-direction: column;
                 padding: 0.8rem;
-                box-shadow: 6.4px 6.4px 1.6px rgba(0, 0, 0, 0.30);
-                background-color: $negro;
-                overflow: auto;
+                background: none;
+                border: none;
+                box-shadow: none;
         
                 .sobre-mi-img {
-                    float: left;
-                    width: 6.4rem;
-                    height: 6.4rem;
-                    shape-outside: circle(50%);
+                    width: 10rem;
+                    height: 10rem;
                     border-radius: 50%;
-                    border: 1.6px solid $blanco-principal;
-                    margin-right: 0.4rem;
+                    border: 0.2rem solid $blanco-principal;
+                    margin-bottom: 1rem;
+
                 }
         
                 #parrafo-sobre-mi {
+                    border: 0.2rem solid $blanco-principal;
+                    border-radius: 2px;
+                    box-shadow: 6.4px 6.4px 1.6px rgba(0, 0, 0, 0.30);
+                    background-color: $negro;
+                    overflow: auto;
                     color: $blanco-principal;
-                    font-size: 0.51rem;
+                    font-size: 0.7rem;
                     line-height: 1.6; // Sin cambios
                     text-align: justify;
+                    padding: 1rem;
                 }
             }
         }        

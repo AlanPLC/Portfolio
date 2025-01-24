@@ -83,6 +83,7 @@ $negro: #000000;
 
             // Reducción 60%
             @media (max-width: 480px){
+                margin: 0 auto;
                 border-radius: 2px; 
                 box-shadow: 6.4px 6.4px 1.6px rgba(0, 0, 0, 0.30);
                 width: fit-content;
@@ -91,7 +92,7 @@ $negro: #000000;
 
                 h2 {
                     color: $negro;
-                    font-size: 0.8rem;
+                    font-size: 1.2rem;
                     margin: 0 0 1rem;
                     letter-spacing: 0.08rem;
                     text-shadow: 1.2px 1.2px 0.8px rgba(0, 0, 0, 0.5);

@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import './styles/acordeon.scss';
 
 export default function Acordeon() {
@@ -51,6 +51,7 @@ export default function Acordeon() {
   const toggleAccordion = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
+
 
   return (
     <div>
