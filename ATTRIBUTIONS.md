@@ -14,6 +14,8 @@ Este proyecto utiliza los siguientes recursos:
   *. Envelope
   *. Github
   *. Linkedin
+  *. Terminal
+  *. Angle
    - Licencia: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
    - Autor: [Font Awesome](https://fontawesome.com/)
    - Descargado desde: [Font Awesome](https://fontawesome.com/)
