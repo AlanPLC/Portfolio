@@ -2,7 +2,6 @@ import './styles/modal.scss'
 
 export default function Modal({isOpen, onClose}){
 
-
     return(
         <div className={`modal-overlay ${isOpen ? "isOpen" : ""}`}>
             <div className='modal-content'>
