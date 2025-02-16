@@ -10,12 +10,15 @@ Este proyecto utiliza los siguientes recursos:
    - Descargado desde: [SVGRepo](https://www.svgrepo.com/)
 
 2. **Íconos de Font Awesome**
-  *. Copy
-  *. Envelope
-  *. Github
-  *. Linkedin
-  *. Terminal
-  *. Angle
+   
+  *. copy
+  *. envelope
+  *. github
+  *. linkedin
+  *. terminal
+  *. angle
+  *. xmark
+  *. code 
    - Licencia: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
    - Autor: [Font Awesome](https://fontawesome.com/)
    - Descargado desde: [Font Awesome](https://fontawesome.com/)
