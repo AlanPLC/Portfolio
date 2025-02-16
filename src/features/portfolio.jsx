@@ -1,7 +1,14 @@
 import './styles/portfolio.scss'
+import { useState } from 'react'
 import Acordeon from '../components/acordeon.jsx'
 import Footer from '../components/footer.jsx'
+import Modal from '../components/modal.jsx'
 export default function Portfolio (){
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
 
     return(
         // Componente Porfolio
@@ -158,7 +165,8 @@ export default function Portfolio (){
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer openModal={openModal}/>
+            <Modal isOpen={isModalOpen} onClose={closeModal}/>
         </div>
     )
 }

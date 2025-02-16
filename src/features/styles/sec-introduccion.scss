@@ -63,6 +63,7 @@
                 padding: 0.5rem;
                 position: relative;
                 box-shadow: 8px 6px 2px rgba(0, 0, 0, 0.25);
+                z-index: 1;
 
             }
             #desc::before,
@@ -97,7 +98,7 @@
             .introduccion-img{
                 width: 384px;
                 height: 288px;
-                z-index: 99;
+                z-index: 2;
             }
         }
 
@@ -212,7 +213,7 @@
                 .introduccion-img {
                     width: 288px; 
                     height: 216px; 
-                    z-index: 99;
+                    z-index: 2;
                 }
             }
     
@@ -328,7 +329,7 @@
                 .introduccion-img {
                     width: 211.2px;
                     height: 158.4px;
-                    z-index: 99;
+                    z-index: 2;
                 }
             }
         
@@ -443,7 +444,7 @@
                 .introduccion-img {
                     width: 18rem;
                     height: auto;
-                    z-index: 99;
+                    z-index: 2;
                     order: 2;
                     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)), ;
                 }

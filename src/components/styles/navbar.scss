@@ -310,7 +310,7 @@ nav{
                 &:active {
                     color: $verde-oscuro;
                 }
-                a, .poppins-semibold {
+                a{
                     -webkit-tap-highlight-color: transparent; 
                     user-select: none;
                     text-decoration: none; 
